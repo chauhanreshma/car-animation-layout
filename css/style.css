@@ -1,0 +1,49 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-image: url("../image/sky.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.highway{
+    width: 500%;
+    height: 200px;
+    display: block;
+    background-image: url("../image/road.jpg");
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: highway 5s linear infinite;
+}
+@keyframes highway{
+    100%{
+        transform:translateX(-3400px);
+    }
+}
+.car{
+    width: 500%;
+    height: 250px;
+    display: block;
+    background-image: url(../image/city.png);
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 200px;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+}
+@keyframes highway{
+    100%{
+        transform:translateX(-1400px);
+    }
+}
